@@ -23,7 +23,7 @@ func (sia *SortedIntegerArray) Insert(i int) {
 	ln := len(sl)
 
 	lo := 0
-	hi := len(sl)
+	hi := len(sl) - 1
 
 	// Perform a binary search to find the position to insert i
 	for lo < hi {
@@ -62,7 +62,7 @@ func (sia SortedIntegerArray) averageWithoutOverflow(a int, b int) int {
 func (sia SortedIntegerArray) Median() int {
 	sl := *sia.Items
 	length := len(sl)
-	avgNeeded := length%2 != 0
+	avgNeeded := length%2 != 1
 	if avgNeeded {
 		mid := float64(length / 2)
 		hiMid := int(math.Ceil(mid))
