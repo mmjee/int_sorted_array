@@ -6,4 +6,4 @@
 
 #### Licensing
 
-Licensed under GPLv3 and LGPLv3, see [here](COPYING) and [here](COPYING.LESSER).
+Licensed under GPLv3 and LGPLv3, see [here](LICENSE) and [here](LICENSE.LESSER).
